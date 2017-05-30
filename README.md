@@ -1,3 +1,11 @@
+# Changes made in this FROK
+
+- parse/base.js
+Added Array attribute to soap Envelope
+
+- parse/xmlHandler.js
+Forced array to use namespace 'arr'
+
 # strong-soap
 
 This module provides a Node.js SOAP client for invoking web services and a mock-up SOAP server capability to create and test your web service. This module is based on `node-soap` module.
