@@ -67,6 +67,7 @@ class Base extends EventEmitter {
     var doc = xmlBuilder.create(prefix + ':Envelope',
       {version: '1.0', encoding: 'UTF-8', standalone: true});
     doc.attribute('xmlns:' + prefix, nsURI);
+    doc.attribute('xmlns:arr', "http://schemas.microsoft.com/2003/10/Serialization/Arrays");
     let header = doc.element(prefix + ':Header');
     let body = doc.element(prefix + ':Body');
     return {
