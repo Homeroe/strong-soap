@@ -1,7 +1,7 @@
 # Changes made in this FORK
 
 - parse/base.js
-Added Array attribute to soap Envelope
+Added xmlns:arr attribute to soap Envelope
 
 - parse/xmlHandler.js
 Forced array to use namespace 'arr'
