@@ -75,6 +75,7 @@ class XMLHandler {
       let xmlns;
       if (descriptor.form === 'unqualified') {
         elementName = name;
+        if(elementName == 'string') elementName = 'arr:'+elementName;
         nsContext.pushContext();
         nameSpaceContextCreated = true;
       } else if (descriptor.qname) {
